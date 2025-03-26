@@ -1,0 +1,7 @@
+@import url("./normalize.css");
+@import url("./principal.css");
+@import url("./calculadora.css");
+
+:root {
+    --fonte: "Inter", sans-serif;
+}

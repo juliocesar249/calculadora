@@ -1,0 +1,8 @@
+.principal {
+    align-items: center;
+    background-image: radial-gradient(#2A48A9 0%, #14296F 100%);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

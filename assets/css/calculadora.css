@@ -1,0 +1,141 @@
+.principal__formulario {
+    background-color: #9E9E9E;
+    border-radius: 18px;
+    height: 54rem;
+    padding: 1.5rem;
+    width: 39rem;
+}
+
+.formulario__container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.container__visor {
+    color: #676767;
+    border-radius: 18px;
+    border: none;
+    font-family: var(--fonte);
+    font-size: 6rem;
+    font-weight: 700;
+    height: 8rem;
+    padding: 1rem 0.5rem;
+    text-align: end;
+    width: 100%;
+}
+
+.container__digitos {
+    align-content: center;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "numero1 numero2 numero3 soma"
+    "numero4 numero5 numero6 subtracao"
+    "numero7 numero8 numero9 multiplicacao"
+    "numero0 virgula divisao divisao"
+    "apagar apagar resultado resultado"
+    ;
+    grid-template-columns: 109px 109px 109px 162px;
+    grid-template-rows: 109px 109px 109px 109px 109px; 
+    height: 100%;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+.digitos__digito {
+    align-items: center;
+    background-color: #676767;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    display: flex;
+    font-family: var(--fonte);
+    font-size: 96px;
+    font-weight: 700;
+    height: 109px;
+    justify-content: center;
+    width: 109px;
+}
+
+.digitos__digito:hover {
+    cursor: pointer;
+    background-color: #4b4b4b;
+}
+
+.digitos__digito--grande {
+    width: 100%;
+}
+
+button[value="1"] {
+    grid-area: numero1;
+}
+
+button[value="2"] {
+    grid-area: numero2;
+}
+
+button[value="3"] {
+    grid-area: numero3;
+}
+
+button[value="4"] {
+    grid-area: numero4;
+}
+
+button[value="5"] {
+    grid-area: numero5;
+}
+
+button[value="6"] {
+    grid-area: numero6;
+}
+
+button[value="7"] {
+    grid-area: numero7;
+}
+
+button[value="8"] {
+    grid-area: numero8;
+}
+
+button[value="9"] {
+    grid-area: numero9;
+}
+
+button[value="0"] {
+    grid-area: numero0;
+}
+
+button[value=","] {
+    grid-area: virgula;
+}
+
+
+.soma {
+    grid-area: soma;
+}
+
+.subtracao {
+    grid-area: subtracao;
+}
+
+.multiplicacao {
+    grid-area: multiplicacao;
+}
+
+.divisao {
+    grid-area: divisao;
+}
+
+.resultado {
+    grid-area: resultado;
+}
+
+.apagar {
+    grid-area: apagar;
+}
