@@ -3,6 +3,12 @@
     background-image: radial-gradient(#2A48A9 0%, #14296F 100%);
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+}
+
+noscript {
+    font-family: var(--fonte);
+    font-size: 4rem;
+    text-wrap: nowrap;
 }
