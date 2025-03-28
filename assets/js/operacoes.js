@@ -63,7 +63,6 @@ function atribuiNumero(valor = '0') {
     atualizaDisplay(calculadora[numeroParaSetar]); 
     console.clear(); //! para debug
     console.table(calculadora); //! para debug
-    console.log("valor === '.': " + (valor === '.') + "\n(calculadora[numeroParaSetar].includes('.')): " + (calculadora[numeroParaSetar].includes('.'))); //! para debug
 }
 
 function proximaOperacao() {
@@ -116,3 +115,5 @@ formulario.querySelectorAll(".operacao").forEach(elemento => {
         console.table(calculadora) //! para debug
     });
 });
+
+export default calculadora;
